@@ -30,7 +30,17 @@
         <div id="timer">Tempo: <span id="time">0</span> segundos<br><button onclick="toggleTimer()">Iniciar/Parar</button></div>
         <div id="instructions">
             <h3>Instruções do Desafio</h3>
-            <p>Seu objetivo é levar o cavalo branco (♘) de a1 até h8, avançando fileira por fileira. Em cada fileira, você deve mover da coluna mais à esquerda possível até a mais à direita permitida pela regra: jamais passar por casas atacadas pela dama preta (♛) em d5, que ameaça todas as casas na mesma linha, coluna e diagonais. Ao chegar na última coluna válida da fileira, avance para a próxima fileira superior na primeira coluna válida.</p>
+            <p>Um exercício básico com o cavalo (uma breve distração)
+
+O modo como um cavalo navega pelo tabuleiro costuma ser muito difícil para um iniciante compreender. Todas as outras peças movem-se em formas que podem ser facilmente compreendidas e visualizadas, mesmo que a pessoa nunca tenha visto um tabuleiro de xadrez antes. Os reis só andam uma casa em qualquer direção; e bispos, torres e damas, todos — essencialmente — movem-se em linha reta.
+
+Há um teste muito interessante e bastante complexo (apesar de parecer fácil) que serve como um indicador surpreendentemente bom da habilidade geral de um jogador. Ele se baseia na posição abaixo.
+
+O cavalo branco começa em a1, e seu trabalho é mover essa peça para b1, mas sem colocá-la em nenhuma casa que seja ameaçada pela dama preta. Assim, Ca1-b3-d2-b1 não é permitido, já que as casas b3 e d2 estão expostas à dama preta. Entretanto, a rota Ca1-c2-a3-b1 não tem problema.
+
+Chegando a b1, você deve agora manobrar o cavalo até c1 aplicando o mesmo princípio. Você pode pular a casa d1 (ela é ameaçada pela dama) e mirar as casas e1, depois f1 e g1. Chegando a g1, você terá completado o primeiro nível (você não pode ir para h1), e agora deve ir para o nível 2, começando com b2 (a2 não, por motivos óbvios). A seguir, estão c2, e2, f2 e h2, e depois para o terceiro nível com a3 — e assim por diante. Continue com isso até chegar a h8.
+
+Tente — é mais difícil do que se pensa. Mesmo os Grandes Mestres levam alguns bons minutos fazendo isso. Se você nunca fez isso antes e terminar em menos de dez minutos, você foi brilhante.</p>
             <ul><li>Selecione o cavalo clicando sobre ele</li><li>Clique em uma casa válida em "L" para mover</li><li>Casas inválidas exibirão alerta</li><li>A borda vermelha indica a próxima casa-objetivo segundo as regras</li></ul>
         </div>
     </div>
